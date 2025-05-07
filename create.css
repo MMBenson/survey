@@ -1,0 +1,131 @@
+/* 問題卡片樣式 */
+.questions-list {
+    min-height: 100px;
+}
+
+.question-card {
+    cursor: move;
+}
+
+.question-ghost {
+    opacity: 0.5;
+    background: #f0f0f0;
+}
+
+.question-header {
+    background-color: #f8f9fa;
+}
+
+.option-item {
+    margin-bottom: 8px;
+}
+
+/* 拖曳效果 */
+.sortable-ghost {
+    opacity: 0.4;
+    background: #f0f8ff;
+}
+
+.sortable-chosen {
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* 按鈕樣式 */
+.add-option, .add-other-option {
+    margin-right: 8px;
+}
+
+/* 評分題樣式 */
+.rating-preview {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/* 必填標記 */
+.form-label .text-danger {
+    font-weight: bold;
+}
+
+/* 提示文字 */
+.no-questions {
+    padding: 50px 0;
+}
+
+/* 響應式調整 */
+@media (max-width: 768px) {
+    .rating-options .col-2 {
+        width: 20%;
+        padding: 0 5px;
+    }
+}
+/* 子問題相關樣式 */
+.subquestions-container {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    border: 1px dashed #ccc;
+}
+
+.subquestion-item {
+    position: relative;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 5px;
+}
+
+.subquestion-handle {
+    cursor: move;
+    margin-right: 10px;
+    color: #6c757d;
+}
+
+.subquestion-actions {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+/* 矩陣題樣式 */
+.matrix-items-container {
+    margin-bottom: 15px;
+}
+
+.matrix-item {
+    margin-bottom: 8px;
+}
+
+.matrix-preview {
+    overflow-x: auto;
+}
+
+.matrix-preview table {
+    background-color: white;
+}
+
+.matrix-preview th, 
+.matrix-preview td {
+    padding: 8px;
+    text-align: center;
+}
+
+.matrix-item-text {
+    width: 100%;
+}
+
+.delete-matrix-item {
+    cursor: pointer;
+}
+
+/* 響應式調整 */
+@media (max-width: 768px) {
+    .matrix-preview table {
+        font-size: 14px;
+    }
+    
+    .matrix-preview th, 
+    .matrix-preview td {
+        padding: 5px;
+    }
+}
